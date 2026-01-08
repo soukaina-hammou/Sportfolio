@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of a Web Developer and Cybersecurity Student">
+    <title>Soukaina Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7c9342dcfa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">&lt;Dev<span class="highlight">Sec</span>/&gt;</a>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="hamburger" id="hamburger" aria-label="Open Menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <span class="greeting hidden">Hello, I'm</span>
+            <h1 class="hidden">SOUKAINA HAMMOU.</h1>
+            <h2 class="hidden">I build secure & <span class="highlight">scalable web solutions</span>.</h2>
+            <p class="hidden">Full-Stack Developer & Network Security Engineer passionate about building accessible, pixel-perfect interfaces with robust backend security.</p>
+            <div class="cta-buttons hidden">
+                <a href="#projects" class="btn btn-primary">View Work</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title hidden">About Me</h2>
+            <div class="about-grid">
+                <div class="about-img hidden">
+                    <img src="src/johan.jfif" alt="Profile Picture">
+                    <div class="img-overlay"></div>
+                </div>
+                <div class="about-text hidden">
+                    <p>I am a Computer Science student specializing in <strong>Web Development</strong> and <strong>Network Security</strong>. My mission is to bridge the gap between interactive design and secure architecture.</p>
+                    <p>When I'm not coding, I'm participating in CTF (Capture The Flag) competitions or contributing to open-source security tools.</p>
+                    
+                    <div class="experience-timeline">
+                        <div class="timeline-item">
+                            <span class="date">2026 - Present</span>
+                            <h4>Full Stack Web Developer</h4>
+                            <p>Study Web Development Full-Stackin Nouaceur Wings Tech .</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="date">2024 - 2025</span>
+                            <h4>Management</h4>
+                            <p>I studied Management with a specialization in E-commerce and Marketing at FSJES Casablanca.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="date">2023 - 2024</span>
+                            <h4>Baccalaureate Certificate</h4>
+                            <p>I obtained my Baccalaureate in Physical Sciences (French Option) with a Pass grade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title hidden">Hard Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card hidden">
+                    <i class="fas fa-code icon"></i>
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript (ES6+)</span>
+                        <span>React</span>
+                        <span>Tailwind</span>
+                    </div>
+                </div>
+                <div class="skill-card hidden">
+                    <i class="fas fa-server icon"></i>
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span>Node.js</span>
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>REST APIs</span>
+                    </div>
+                </div>
+                <div class="skill-card hidden">
+                    <i class="fas fa-shield-alt icon"></i>
+                    <h3>Security & Tools</h3>
+                    <div class="skill-tags">
+                        <span>Git</span>
+                        <span>Linux</span>
+                        <span>OWASP</span>
+                        <span>Penetration Testing</span>
+                        <span>Docker</span>
+                    </div>
+                </div>
+            </div>
+
+<br>
+
+            <h2 class="section-title hidden">Soft Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card hidden">
+                    <span class="material-symbols-outlined">
+<h1>Communication</h1>
+</span>
+                Explaining ideas clearly, active listening, adapting tone to audience.
+                </div>
+                <div class="skill-card hidden">
+                    <span class="material-symbols-outlined">
+<h1>Time Management</h1>
+</span>
+                Prioritizing tasks, meeting deadlines, balancing multiple projects effectively.
+                </div>
+                <div class="skill-card hidden">
+                    <span class="material-symbols-outlined">
+<h1>TeamWork</h1>
+</span>
+                Collaborating smoothly, respecting diverse perspectives, resolving conflicts.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title hidden">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <article class="project-card hidden">
+                    <div class="card-header">
+                        <div class="folder-icon"><i class="far fa-folder"></i></div>
+                        <div class="links">
+                            <a href="#" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                            <a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3>Secure Chat App</h3>
+                    <p>A real-time chat application featuring end-to-end encryption using WebSockets and Node.js.</p>
+                    <ul class="tech-list">
+                        <li>Socket.io</li>
+                        <li>Express</li>
+                        <li>AES-256</li>
+                    </ul>
+                </article>
+
+                <article class="project-card hidden">
+                    <div class="card-header">
+                        <div class="folder-icon"><i class="far fa-folder"></i></div>
+                        <div class="links">
+                            <a href="#" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                            <a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3>E-Commerce Dashboard</h3>
+                    <p>Responsive admin dashboard with data visualization charts and dark mode support.</p>
+                    <ul class="tech-list">
+                        <li>HTML/SCSS</li>
+                        <li>Chart.js</li>
+                        <li>Vanilla JS</li>
+                    </ul>
+                </article>
+
+                <article class="project-card hidden">
+                    <div class="card-header">
+                        <div class="folder-icon"><i class="far fa-folder"></i></div>
+                        <div class="links">
+                            <a href="#" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                            <a href="#" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3>Vulnerability Scanner</h3>
+                    <p>A Python script that scans local networks for open ports and outdated service versions.</p>
+                    <ul class="tech-list">
+                        <li>Python</li>
+                        <li>Nmap</li>
+                        <li>Bash</li>
+                    </ul>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-alt">
+        <div class="container contact-container">
+            <h2 class="section-title hidden">Get In Touch</h2>
+            <p class="contact-text hidden">Whether you have a question about security, want to collaborate on a project, or just want to say hi, I'll try my best to get back to you!</p>
+            
+            <form id="contact-form" class="hidden">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+            
+            <div class="social-links hidden">
+    <a href="https://github.com/soukaina-hammou" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+    </a>
+    <a href="https://linkedin.com/in/Soukaina Hammou" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://twitter.com/SoukainaHm3301" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+    </a>
+    <a href="mailto:soukainahammou6@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+    </a>
+</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Designed & Built by Soukaina &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
