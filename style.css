@@ -5,8 +5,8 @@
     --bg-secondary: #112240;
     --text-primary: #ccd6f6;
     --text-secondary: #8892b0;
-    --accent: #64ffda; /* Cyber Green */
-    --accent-hover: #4ac7aa;
+    --accent: #50a8ff; /* Cyber Green */
+    --accent-hover: #50a8ff;
     --white: #ffffff;
     --nav-glass: rgba(10, 25, 47, 0.85);
     
@@ -21,8 +21,8 @@
     --bg-secondary: #f4f4f4;
     --text-primary: #333333;
     --text-secondary: #555555;
-    --accent: #007bff; /* Tech Blue */
-    --accent-hover: #0056b3;
+    --accent: #ef26c3; /* Tech Blue */
+    --accent-hover: #ff20fb;
     --nav-glass: rgba(255, 255, 255, 0.9);
 }
 
@@ -109,11 +109,14 @@ ul {
     background: var(--accent);
     color: var(--bg-primary);
     border: 1px solid var(--accent);
+    box-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
 }
 
 .btn-primary:hover {
     background: transparent;
     color: var(--accent);
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.6);
+    transform: translateY(-3px);
 }
 
 .btn-outline {
@@ -138,10 +141,8 @@ ul {
     align-items: center;
     background: var(--nav-glass);
     backdrop-filter: blur(10px);
-    transition: height 0.3s ease;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -332,7 +333,7 @@ ul {
 }
 
 .skill-card {
-    background: var(--bg-primary);
+    background-color: var(--bg-primary);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
@@ -345,6 +346,7 @@ ul {
 
 .skill-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 10px 30px -15px var(--accent);
 }
 
 .skill-card .icon {
@@ -388,6 +390,8 @@ ul {
 
 .project-card:hover {
     transform: translateY(-7px);
+    box-shadow: 0 10px 30px -10px var(--accent);
+    border: 1px solid var(--accent);
 }
 
 .card-header {
@@ -496,8 +500,8 @@ footer {
 /* --- Scroll Animations --- */
 .hidden {
     opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s ease;
+    transform: translateY(20px);
+    transition: all 1s ease;
 }
 
 .show {
