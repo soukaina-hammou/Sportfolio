@@ -1,14 +1,16 @@
 /* --- Variables & Reset --- */
 :root {
-    /* Dark Mode Defaults */
-    --bg-primary: #0a192f;
-    --bg-secondary: #112240;
-    --text-primary: #ccd6f6;
-    --text-secondary: #8892b0;
-    --accent: #50a8ff; /* Cyber Green */
-    --accent-hover: #50a8ff;
+    /* Custom Theme Defaults - Gray/Blue/Navy */
+    --bg-primary: #061E29;
+    --bg-secondary: #234C6A;
+    --text-primary: #F3F4F4;
+    --text-secondary: #F3F4F4;
+    --accent: #8d2800;
+    --accent-rgb: 73, 136, 196;
+    --accent-hover: #F3F4F4;
+    --btn-primary-text: #F3F4F4;
     --white: #ffffff;
-    --nav-glass: rgba(10, 25, 47, 0.85);
+    --nav-glass: rgba(6, 30, 41, 0.85);
     
     --font-main: 'Inter', sans-serif;
     --font-mono: 'Fira Code', monospace;
@@ -17,13 +19,15 @@
 }
 
 [data-theme="light"] {
-    --bg-primary: #ffffff;
-    --bg-secondary: #f4f4f4;
-    --text-primary: #333333;
-    --text-secondary: #555555;
-    --accent: #ef26c3; /* Tech Blue */
-    --accent-hover: #ff20fb;
-    --nav-glass: rgba(255, 255, 255, 0.9);
+    --bg-primary: #F3F4F4;
+    --bg-secondary: #FFEAD8;
+    --text-primary: #061E29;
+    --text-secondary: #4988C4;
+    --accent: #4988C4;
+    --accent-rgb: 73, 136, 196;
+    --accent-hover: #061E29;
+    --btn-primary-text: #F3F4F4;
+    --nav-glass: rgba(243, 244, 244, 0.9);
 }
 
 * {
@@ -107,15 +111,15 @@ ul {
 
 .btn-primary {
     background: var(--accent);
-    color: var(--bg-primary);
+    color: var(--btn-primary-text);
     border: 1px solid var(--accent);
-    box-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
+    box-shadow: 0 0 10px rgba(var(--accent-rgb), 0.3);
 }
 
 .btn-primary:hover {
     background: transparent;
     color: var(--accent);
-    box-shadow: 0 0 20px rgba(100, 255, 218, 0.6);
+    box-shadow: 0 0 20px rgba(var(--accent-rgb), 0.6);
     transform: translateY(-3px);
 }
 
@@ -127,7 +131,7 @@ ul {
 }
 
 .btn-outline:hover {
-    background: rgba(100, 255, 218, 0.1);
+    background: rgba(var(--accent-rgb), 0.1);
 }
 
 /* --- Navbar --- */
@@ -365,7 +369,7 @@ ul {
 .skill-tags span {
     font-family: var(--font-mono);
     font-size: 0.8rem;
-    background: rgba(100, 255, 218, 0.1);
+    background: rgba(var(--accent-rgb), 0.1);
     color: var(--accent);
     padding: 4px 8px;
     border-radius: 4px;
