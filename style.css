@@ -3,31 +3,29 @@
     /* Custom Theme Defaults - Gray/Blue/Navy */
     --bg-primary: #061E29;
     --bg-secondary: #234C6A;
-    --text-primary: #F3F4F4;
-    --text-secondary: #F3F4F4;
-    --accent: #8d2800;
+    --text-primary: #ffffff;
+    --text-secondary: #ffffff;
+    --accent: #a50000;
     --accent-rgb: 73, 136, 196;
     --accent-hover: #F3F4F4;
-    --btn-primary-text: #F3F4F4;
+    --btn-primary-text: #ffffff;
     --white: #ffffff;
-    --nav-glass: rgba(6, 30, 41, 0.85);
-    
+    --nav-glass: rgba(2, 20, 28, 0.85);
     --font-main: 'Inter', sans-serif;
     --font-mono: 'Fira Code', monospace;
-    
     --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 [data-theme="light"] {
-    --bg-primary: #F3F4F4;
-    --bg-secondary: #FFEAD8;
+    --bg-primary: #d7d7d7;
+    --bg-secondary: #e6e6e6;
     --text-primary: #061E29;
     --text-secondary: #4988C4;
-    --accent: #4988C4;
+    --accent: #000000;
     --accent-rgb: 73, 136, 196;
-    --accent-hover: #061E29;
+    --accent-hover: #ac2500;
     --btn-primary-text: #F3F4F4;
-    --nav-glass: rgba(243, 244, 244, 0.9);
+    --nav-glass:#ffffff;
 }
 
 * {
@@ -144,7 +142,8 @@ ul {
     display: flex;
     align-items: center;
     background: var(--nav-glass);
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(100px);
+    backdrop-filter: blur(100px);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 .nav-container {
@@ -402,13 +401,23 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
-.folder-icon {
-    color: var(--accent);
-    font-size: 2.5rem;
+.project-img-container {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    overflow: hidden;
 }
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
 
 .project-card .links a {
     color: var(--text-secondary);
@@ -426,7 +435,7 @@ ul {
 }
 
 .project-card p {
-    color: var(--text-secondary);
+    color: var(--text-primary);
     font-size: 0.95rem;
     margin-bottom: 20px;
 }
@@ -447,7 +456,7 @@ ul {
 
 .contact-text {
     margin-bottom: 40px;
-    color: var(--text-secondary);
+    color: var(--text-primary);
 }
 
 .form-group {
